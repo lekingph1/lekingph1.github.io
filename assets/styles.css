@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100..900&display=swap');
+
+*{  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-size: 18px;
+    background-color: #141414;
+    color: #ffffff;
+    font-family: 'Inter';
+}
+.container{
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px 45px;
+}
+
+.logo{
+    display: flex;
+    margin-left: 20px;
+}
+
+.logo a{
+    font-family: 'Calistoga';
+    font-size: 36px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.logo a span{
+    color: #fe6a0f;
+}
+
+/* HEADER*/
+
+header .container{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 100px;
+}
+
+header nav{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+header nav .leftside{
+    display: flex;
+    flex: 1;
+    margin-left: 50px;
+}
+
+header nav li{
+    margin: 30px;
+}
+
+header nav li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+header nav li a:hover{
+    color: #999999;
+}
+
+header nav .button{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+header nav .button:hover{
+    color: #999999;
+    border: #999999;
+
+}
+
+header .menu{
+    display: none;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+
+header .menu-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+
+header .menu-icon div{
+    height: 6px;
+    background-color: #ffffff;
+}
+/*seection*/
+.hero .container{
+    display: flex;
+}
+
+.hero .leftside,
+.hero .rightside{
+    flex: 1;
+    
+}
+
+.hero .leftside{
+    padding-bottom: 150px;
+}
+
+.hero .rightside{
+    text-align: center;
+}
+.hero .rightside img{
+    width: auto;
+    height: 600px;
+}
+
+.hero h1{
+    font-family: 'Calistoga';
+    font-size: 65px;
+    line-height: 74px;
+    margin-top: 50px;
+}
+
+.hero p{
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    font-family: 'Calistoga';
+}
+
+.hero .button{
+    display: inline-block;
+    background-color: #fe6a0f;
+    padding: 15px 80px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero .button:hover{
+    opacity: 0.8;
+}
+
+/*search*/
+
+.search{
+    background-color: #1f1f1f;
+    margin-top: -100px;
+    padding: 80px 0;
+}
+
+.search  .title{
+    font-size: 32px;
+    font-family: 'Castoliga';
+    padding-bottom: 30px;
+
+}
+.search .sides{
+    display: flex;
+    margin-top: 30px;
+    gap: 100px;
+
+}
+
+.sides .leftside{ 
+    flex: 1;
+}
+
+.sides .rightside{
+    flex: 1;
+}
+
+.search input,
+.search select, option{
+    width: 100%;
+    background-color: #2b2b2b;
+    color: #ccc;
+    font-size: 24px;
+    padding: 14px;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    padding-right: 200px;
+}
+
+
+.search input{
+    background-image: url(searchIcon.png);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    padding-left: 60px;
+
+}
+
+.seach .select{
+    border-right: 20px solid transparent; /*não funcionou*/
+
+}
+
+
+/*Products*/
+
+.products-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px 0;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+}
+
+
+.product-item{
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.product-item:hover{
+    opacity: 0.8;
+}
+
+.product-item .warning{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #fe6a0f;
+    padding: 10px 15px;
+    color: #ffffff;
+    border-radius: 4px;
+
+}
+
+.product-item .photo{
+    text-align: center;
+    background-color: #2b2b2b;
+    padding: 40px 0px;
+
+}
+
+.product-item .photo img{
+    max-width: 100%;
+}
+
+.product-item .info{
+    background-color: #1f1f1f;
+    margin-top: -90px;
+    padding: 60px 30px 30px 30px;
+    color: #fff;
+}
+
+
+.info .product-category{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.info .product-name{
+    font-size: 32px;
+    font-family: 'Castiloga';
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+.info .product-price{
+    font-size: 32px;
+    font-weight: bold;
+    color: #fe6a0f;
+}
+
+
+
+/*footer*/
+
+footer{
+    background-color: #1f1f1f;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+footer .copyrights{
+    color: #5f5f5f;
+    font-size: 18px;
+}
+
+footer .copyrights a{
+    font-size: 20px;
+    text-decoration: none;
+    font-family:'sans-serif';
+    color: #ffffff;
+    text-align: center;
+}
+
+footer .copyrights a:hover{
+    color: #fe6a0f;
+    font-family:'Calistoga';
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+    header nav{
+        display: none;
+    }
+
+    header .menu{
+        display: flex;
+    }
+
+    .hero .container{
+        flex-direction: column;
+    }
+
+    .hero .leftside{
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .hero .rightside img{
+        height: 300px;
+    }
+    .hero h1{
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+
+    .search .sides{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .title{
+        text-align: center;
+    }
+
+    .products-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .copyrights{
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 550px){
+    .products-grid{
+        grid-template-columns: 1fr;
+    }
+
+    footer .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
